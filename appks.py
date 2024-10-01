@@ -3,10 +3,10 @@ import pickle
 import numpy as np
 
 # Load model and scaler
-with open("C:/Users/Ayman/Downloads/saved_linear_model_new.pkl", 'rb') as model_file:
+with open("saved_linear_model_new.pkl", 'rb') as model_file:
     model = pickle.load(model_file)
     model
-with open("C:/Users/Ayman/Downloads/saved_scaler_linear_new.pkl", 'rb') as scaler_file:
+with open("saved_scaler_linear_new.pkl", 'rb') as scaler_file:
     scaler = pickle.load(scaler_file)
 
 expected_columns = [
@@ -24,7 +24,7 @@ expected_columns = [
 
 # Streamlit UI
 st.title("Student Performance Prediction")
-st.image("C:/Users/Ayman/Downloads/WhatsApp Image 2024-09-24 at 16.27.31_0cfd7f07.jpg", use_column_width=True)
+st.image("WhatsApp Image 2024-09-24 at 16.27.31_0cfd7f07.jpg", use_column_width=True)
 
 st.header("Enter Student Details:")
 
